@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirti Nagar</title>
+    <style>
+        body {
+            background-color: darkblue;
+            color: aliceblue;
+            width: 50vw;
+            height: 2vh;
+            padding: 50px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: xx-large;
+            font-family: fantasy;
+            border: 5px solid rgb(11, 155, 191);
+        }
+
+        .heading {
+            border: 5px solid rgb(11, 155, 191);
+            background-color: chocolate;
+            color: rgb(12, 12, 11);
+        }
+
+        input[type="range"] {
+            width: 300px;
+        }
+
+        output {
+            font-weight: bold;
+        }
+        .end{
+            color: darkgoldenrod;
+            box-sizing: border-box;
+            border: solid cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <marquee behavior="" direction="left">HEY!!! WELCOME TO OUR WEBPAGE :) </marquee>
+    <br><br><br>
+    <div class="heading">
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae tempora esse rem sunt corrupti illum animi
+        iure, aliquam mollitia odio, laudantium nihil! Laboriosam quisquam mollitia ipsum sequi! Deserunt
+        expedita exercitationem at, voluptatum voluptate hic quas iure illum, recusandae, porro sapiente. Magnam
+        aperiam tenetur reiciendis atque vitae voluptatem vel, impedit aliquam.
+
+
+    </div>
+    <br><br>
+    <form action="submit.php" method="post"></form>
+    <label for="choices">SELECT THE BATTING TEAM : </label>
+    <BR></BR>
+    <select name="option" id="choices" required>
+        <option value="option1">CHENNAI SUPER KINGS</option>
+        <option value="option2">GUJARAT TITANS</option>
+        <option value="option3">ROYAL CHALLENGERS BANGALURU</option>
+        <option value="option4">MUMBAI INDIANS</option>
+        <option value="option5">DELHI CAPITALS</option>
+        <option value="option6">LUCKNOW SUPER GIANTS</option>
+        <option value="option7">RAJISTHAN ROYALS</option>
+        <option value="option8">SUNRISERS HYDERABAD</option>
+        <option value="option9">KINGS XI PUNJAB</option>
+        <option value="option10">KOLKATA NIGHT RIDERS</option>
+    </select>
+
+    <br><br>
+    <form action="submit.php" method="post"></form>
+    <label for="choices">SELECT THE BOWLING TEAM :</label>
+    <BR></BR>
+    <select name="option" id="choices" required>
+        <option value="option1">CHENNAI SUPER KINGS</option>
+        <option value="option2">GUJARAT TITANS</option>
+        <option value="option3">ROYAL CHALLENGERS BANGALURU</option>
+        <option value="option4">MUMBAI INDIANS</option>
+        <option value="option5">DELHI CAPITALS</option>
+        <option value="option6">LUCKNOW SUPER GIANTS</option>
+        <option value="option7">RAJISTHAN ROYALS</option>
+        <option value="option8">SUNRISERS HYDERABAD</option>
+        <option value="option9">KINGS XI PUNJAB</option>
+        <option value="option10">KOLKATA NIGHT RIDERS</option>
+    </select>
+
+    <br><br>
+    <form action="submit.php" method="post">
+        <label for="overs">ENTER THE CURRENT OVER:</label>
+        <input type="number" id="overs" name="overs" value="0.0" min="0.0" max="20.0" step="0.1">
+        <br><br>
+    </form>
+    <form action="submit.php" method="post">
+        <label for="score">ENTER THE CURRENT SCORE:</label>
+        <input type="number" id="score" name="score" value="0" min="0" max="720" step="1">
+    </form>
+    <br><br>
+    <form action="submit.php" method="post">
+        <label for="wickets">ENTER WICKETS FALLEN TILL NOW :</label>
+        <br>
+        <input type="range" id="wickets" name="number" min="0" max="9" value="9" step="1"
+            oninput="numbers.value = wickets.value">
+        <br>
+        <output id="numbers">0</output>
+        <br>
+    </form>
+    <br><br>
+    <form action="submit.php" method="post">
+        <label for="5overs">RUNS SCORED IN LAST 5 OVERS:</label>
+        <input type="number" id="5overs" name="5overs" value="0" min="0" max="180" step="1">
+        <br><br>
+    </form>
+    <br>
+    <form action="submit.php" method="post">
+        <label for="5wickets">WICKETS FALLEN IN LAST 5 OVERS:</label>
+        <input type="number" id="5wickets" name="5wickets" value="0" min="0" max="9" step="1">
+        <br><br>
+    </form>
+    <button type="submit">Predict</button><br><br><br>
+</body>
+<footer>
+
+    <marquee behavior="" direction="left"><h6 class="end">THANKS FOR VISITING | CONTACT FOR MORE INFO -KIRATMEET SINGH AHLUWALIA 
+    </h6></marquee>
+</footer>
+
+</html>
